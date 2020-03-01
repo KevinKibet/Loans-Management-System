@@ -1,0 +1,29 @@
+{
+  "name": "loanmanagementapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client":"npm start --prefix client",
+    "dev":"concurrently \"npm run client\" \"npm run server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinKibet/Loans-Management-System.git"
+  },
+  "author": "Kevin&Oscar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KevinKibet/Loans-Management-System/issues"
+  },
+  "homepage": "https://github.com/KevinKibet/Loans-Management-System#readme",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
