@@ -1,17 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Customers from './components/customers';
-import './App.css';
+import {Button} from 'react-bootstrap'
+import {Alert} from 'react-bootstrap'
+import AddCustomers from './components/addcustomer';
+
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
        
+        <p>
+       <Button variant="warning">Add customer</Button>
         </p>
-        <Customers />
+        <div >
+        
+     
+
+<Alert variant="success">
+  <Alert.Heading>Hey, nice to see you</Alert.Heading>
+  <p>
+    <Customers />
+
+  </p>
+  <hr />
+  <p className="mb-0">
+    
+  </p>
+</Alert>
+<AddCustomers />
+
+
+        </div>
       </header>
     </div>
   );
